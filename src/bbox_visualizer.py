@@ -129,16 +129,8 @@ class BboxVisualizer:
             cv2.polylines(image, [points], True, self.colors['success'], 
                          self.box_thickness + 2)
             
-            # Add "BEST" marker
-            x_center = int(sum(point[0] for point in best_bbox) / 4)
-            y_center = int(sum(point[1] for point in best_bbox) / 4)
-            
-            best_label = "BEST"
-            cv2.putText(image, best_label,
-                       (x_center - 25, y_center),
-                       self.font, 0.6,
-                       (0, 255, 255),  # Yellow
-                       2)
+            # Best result is already marked with bold green border
+            # No additional text marker needed to avoid blocking the number
     
     def _draw_status_info(self, image: np.ndarray, result: Dict):
         """Draw overall recognition status information"""
@@ -146,10 +138,10 @@ class BboxVisualizer:
         
         # Status information
         if result.get('success'):
-            status_text = f"✓ Train: {result['train_number']}"
+            status_text = f"SUCCESS Train: {result['train_number']}"
             status_color = self.colors['success']
         else:
-            status_text = "✗ No Train Number"
+            status_text = "FAILED No Train Number"
             status_color = self.colors['failed']
         
         # Performance information
@@ -223,11 +215,33 @@ class BboxVisualizer:
         mid_x = original_image.shape[1]
         cv2.line(comparison, (mid_x, 0), (mid_x, height), (255, 255, 255), 3)
         
-        # Add titles
-        cv2.putText(comparison, "Original", (20, 30),
-                   self.font, 0.8, (255, 255, 255), 2)
-        cv2.putText(comparison, "Detected", (mid_x + 20, 30),
-                   self.font, 0.8, (255, 255, 255), 2)
+        # Add titles with enhanced visibility at bottom corners
+        title_font_scale = 1.2
+        title_thickness = 3
+        title_y = height - 20
+        
+        # Add background rectangles for better visibility
+        original_text_size = cv2.getTextSize("Original", self.font, title_font_scale, title_thickness)[0]
+        detected_text_size = cv2.getTextSize("Detected", self.font, title_font_scale, title_thickness)[0]
+        
+        # Background for "Original" title
+        cv2.rectangle(comparison, (15, title_y - original_text_size[1] - 5), 
+                     (25 + original_text_size[0], title_y + 5), (0, 0, 0), -1)
+        cv2.rectangle(comparison, (15, title_y - original_text_size[1] - 5), 
+                     (25 + original_text_size[0], title_y + 5), (255, 255, 255), 2)
+        
+        # Background for "Detected" title  
+        detected_x = mid_x + 20
+        cv2.rectangle(comparison, (detected_x - 5, title_y - detected_text_size[1] - 5), 
+                     (detected_x + detected_text_size[0] + 5, title_y + 5), (0, 0, 0), -1)
+        cv2.rectangle(comparison, (detected_x - 5, title_y - detected_text_size[1] - 5), 
+                     (detected_x + detected_text_size[0] + 5, title_y + 5), (0, 255, 0), 2)
+        
+        # Add title text
+        cv2.putText(comparison, "Original", (20, title_y),
+                   self.font, title_font_scale, (255, 255, 255), title_thickness)
+        cv2.putText(comparison, "Detected", (detected_x, title_y),
+                   self.font, title_font_scale, (255, 255, 255), title_thickness)
         
         return comparison
 
