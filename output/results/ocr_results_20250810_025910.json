@@ -1,0 +1,430 @@
+{
+  "metadata": {
+    "timestamp": "20250810_025910",
+    "input_directory": "raw",
+    "output_directory": "output",
+    "ocr_engine": "EasyOCR"
+  },
+  "statistics": {
+    "total_images": 13,
+    "successful_detections": 11,
+    "failed_detections": 2,
+    "success_rate": 84.61538461538461,
+    "average_processing_time_ms": 486.3395690917969,
+    "max_processing_time_ms": 944.2107677459717,
+    "min_processing_time_ms": 386.08598709106445,
+    "average_confidence": 0.9986033665411399,
+    "detected_train_numbers": [
+      "116",
+      "119",
+      "126",
+      "132",
+      "140",
+      "178",
+      "191",
+      "196",
+      "28",
+      "03",
+      "159"
+    ],
+    "unique_train_numbers": [
+      "03",
+      "196",
+      "119",
+      "132",
+      "28",
+      "116",
+      "178",
+      "140",
+      "191",
+      "159",
+      "126"
+    ],
+    "unique_count": 11
+  },
+  "detailed_results": [
+    {
+      "success": true,
+      "train_number": "116",
+      "confidence": 0.9973399440447489,
+      "processing_time_ms": 944.2107677459717,
+      "detected_texts": [
+        {
+          "text": "116",
+          "confidence": 0.9973399440447489,
+          "bbox": [
+            [
+              1192.0,
+              350.0
+            ],
+            [
+              1291.0,
+              326.0
+            ],
+            [
+              1301.0,
+              365.0
+            ],
+            [
+              1202.0,
+              390.0
+            ]
+          ]
+        }
+      ],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_116car.jpg",
+      "image_name": "116car.jpg"
+    },
+    {
+      "success": true,
+      "train_number": "119",
+      "confidence": 0.9986385305722555,
+      "processing_time_ms": 419.0938472747803,
+      "detected_texts": [
+        {
+          "text": "119",
+          "confidence": 0.9986385305722555,
+          "bbox": [
+            [
+              943.0,
+              311.0
+            ],
+            [
+              1063.0,
+              311.0
+            ],
+            [
+              1063.0,
+              360.0
+            ],
+            [
+              943.0,
+              360.0
+            ]
+          ]
+        }
+      ],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_119car.jpg",
+      "image_name": "119car.jpg"
+    },
+    {
+      "success": true,
+      "train_number": "126",
+      "confidence": 0.9985356132189432,
+      "processing_time_ms": 723.1619358062744,
+      "detected_texts": [
+        {
+          "text": "126",
+          "confidence": 0.9985356132189432,
+          "bbox": [
+            [
+              1158.0,
+              281.0
+            ],
+            [
+              1270.0,
+              281.0
+            ],
+            [
+              1270.0,
+              328.0
+            ],
+            [
+              1158.0,
+              328.0
+            ]
+          ]
+        }
+      ],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_126car.jpg",
+      "image_name": "126car.jpg"
+    },
+    {
+      "success": true,
+      "train_number": "132",
+      "confidence": 0.9987340569496155,
+      "processing_time_ms": 418.0939197540283,
+      "detected_texts": [
+        {
+          "text": "132",
+          "confidence": 0.9987340569496155,
+          "bbox": [
+            [
+              1078.0,
+              439.0
+            ],
+            [
+              1181.0,
+              428.0
+            ],
+            [
+              1185.0,
+              465.0
+            ],
+            [
+              1081.0,
+              476.0
+            ]
+          ]
+        }
+      ],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_132car.jpg",
+      "image_name": "132car.jpg"
+    },
+    {
+      "success": true,
+      "train_number": "140",
+      "confidence": 0.9991984963417053,
+      "processing_time_ms": 541.1214828491211,
+      "detected_texts": [
+        {
+          "text": "140",
+          "confidence": 0.9991984963417053,
+          "bbox": [
+            [
+              1074.0,
+              292.0
+            ],
+            [
+              1195.0,
+              282.0
+            ],
+            [
+              1199.0,
+              331.0
+            ],
+            [
+              1078.0,
+              341.0
+            ]
+          ]
+        }
+      ],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_140car.jpg",
+      "image_name": "140car.jpg"
+    },
+    {
+      "success": true,
+      "train_number": "178",
+      "confidence": 0.9991827209790548,
+      "processing_time_ms": 410.0911617279053,
+      "detected_texts": [
+        {
+          "text": "178",
+          "confidence": 0.9991827209790548,
+          "bbox": [
+            [
+              1206.0,
+              466.0
+            ],
+            [
+              1316.0,
+              455.0
+            ],
+            [
+              1320.0,
+              492.0
+            ],
+            [
+              1210.0,
+              503.0
+            ]
+          ]
+        }
+      ],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_178car.jpg",
+      "image_name": "178car.jpg"
+    },
+    {
+      "success": true,
+      "train_number": "191",
+      "confidence": 0.9984236359596252,
+      "processing_time_ms": 404.09040451049805,
+      "detected_texts": [
+        {
+          "text": "191",
+          "confidence": 0.9984236359596252,
+          "bbox": [
+            [
+              1160.0,
+              237.0
+            ],
+            [
+              1262.0,
+              243.0
+            ],
+            [
+              1260.0,
+              284.0
+            ],
+            [
+              1158.0,
+              278.0
+            ]
+          ]
+        }
+      ],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_191car.jpg",
+      "image_name": "191car.jpg"
+    },
+    {
+      "success": false,
+      "train_number": null,
+      "confidence": 0.0,
+      "processing_time_ms": 387.0868682861328,
+      "detected_texts": [],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_193car.jpg",
+      "image_name": "193car.jpg"
+    },
+    {
+      "success": true,
+      "train_number": "196",
+      "confidence": 0.9980777899424235,
+      "processing_time_ms": 493.11041831970215,
+      "detected_texts": [
+        {
+          "text": "196",
+          "confidence": 0.9980777899424235,
+          "bbox": [
+            [
+              1145.0,
+              283.0
+            ],
+            [
+              1275.0,
+              270.0
+            ],
+            [
+              1280.0,
+              321.0
+            ],
+            [
+              1150.0,
+              334.0
+            ]
+          ]
+        }
+      ],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_196car.jpg",
+      "image_name": "196car.jpg"
+    },
+    {
+      "success": true,
+      "train_number": "28",
+      "confidence": 0.9995540678501129,
+      "processing_time_ms": 386.08598709106445,
+      "detected_texts": [
+        {
+          "text": "28",
+          "confidence": 0.9995540678501129,
+          "bbox": [
+            [
+              1062.0,
+              570.0
+            ],
+            [
+              1139.0,
+              568.0
+            ],
+            [
+              1140.0,
+              612.0
+            ],
+            [
+              1063.0,
+              614.0
+            ]
+          ]
+        }
+      ],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_28car.jpg",
+      "image_name": "28car.jpg"
+    },
+    {
+      "success": true,
+      "train_number": "03",
+      "confidence": 0.9975704550743103,
+      "processing_time_ms": 394.0880298614502,
+      "detected_texts": [
+        {
+          "text": "03",
+          "confidence": 0.9975704550743103,
+          "bbox": [
+            [
+              1133.0,
+              531.0
+            ],
+            [
+              1203.0,
+              526.0
+            ],
+            [
+              1206.0,
+              566.0
+            ],
+            [
+              1136.0,
+              572.0
+            ]
+          ]
+        }
+      ],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_3car.jpg",
+      "image_name": "3car.jpg"
+    },
+    {
+      "success": false,
+      "train_number": null,
+      "confidence": 0.0,
+      "processing_time_ms": 399.0902900695801,
+      "detected_texts": [],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_testcar150.jpg",
+      "image_name": "testcar150.jpg"
+    },
+    {
+      "success": true,
+      "train_number": "159",
+      "confidence": 0.9993817210197449,
+      "processing_time_ms": 403.0892848968506,
+      "detected_texts": [
+        {
+          "text": "159",
+          "confidence": 0.9993817210197449,
+          "bbox": [
+            [
+              597.0,
+              415.0
+            ],
+            [
+              705.0,
+              410.0
+            ],
+            [
+              708.0,
+              462.0
+            ],
+            [
+              599.0,
+              468.0
+            ]
+          ]
+        }
+      ],
+      "error": null,
+      "annotated_image_path": "output\\annotated_images\\annotated_testcar159.jpg",
+      "image_name": "testcar159.jpg"
+    }
+  ]
+}
